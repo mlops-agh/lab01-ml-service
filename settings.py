@@ -6,6 +6,7 @@ class Settings(BaseSettings):
     # Field validation can be performed also with type: Literal["dev", "test", "prod"].
     ENVIRONMENT: str
     APP_NAME: str
+    API_KEY: str
 
     @field_validator("ENVIRONMENT")
     @classmethod
