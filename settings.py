@@ -3,6 +3,7 @@ from pydantic import field_validator
 
 
 class Settings(BaseSettings):
+    # Field validation can be performed also with type: Literal["dev", "test", "prod"].
     ENVIRONMENT: str
     APP_NAME: str
 
