@@ -1,2 +1,7 @@
 echo 'export GPG_TTY=$(tty)' >> ~/.bashrc
 source ~/.bashrc
+
+uv run uvicorn app:app --reload --port 8000
+uv run uvicorn app:app --app-dir src --reload --port 8000
+
+uv run python src/training.py
